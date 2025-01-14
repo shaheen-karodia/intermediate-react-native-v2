@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { theme } from "@/theme";
 
-export default function App() {
+export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text>This is testing if was navigation worked</Text>
+      <Text>This is the profile screen</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: theme.colorWhite,
     alignItems: "center",
     justifyContent: "center",
   },
