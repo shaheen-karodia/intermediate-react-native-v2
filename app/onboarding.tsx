@@ -42,9 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
-  },
-  text: {
-    fontSize: 24,
+    paddingHorizontal: 8,
   },
   heading: {
     fontSize: 42,

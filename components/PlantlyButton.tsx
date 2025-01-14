@@ -17,7 +17,7 @@ export function PlantlyButton({ title, onPress }: Props) {
 
   return (
     <Pressable
-      onPress={onPress}
+      onPress={HandlePress}
       style={({ pressed }) => {
         if (pressed) return [styles.button, styles.buttonPressed];
         return styles.button;
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 18,
     fontWeight: "bold",
+    textAlign: "center",
   },
   button: {
     paddingHorizontal: 18,
